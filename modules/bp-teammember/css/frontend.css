@@ -1,0 +1,153 @@
+.bp-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.bp-grid-item {
+    position: relative;
+}
+
+.bp-grid-container * {
+    transition: 0.1s all ease;
+}
+.bp-grid-container{
+    display: inline-block;
+}
+
+.bp-masonry-no .bp-grid-item{
+    height : 100%;
+}
+.bp-masonry-no .team-member-wrapper{
+    height: 100%;
+}
+.team-member-wrapper img{
+    transition: all 0.9s ease 0s;
+}
+
+.team-member-wrapper{
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgba(0,0,0,0.15);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15)
+}
+.team-member-avatar-wrapper, .team-member-name-wrapper , .team-member-message-wrapper , .team-member-social-wrapper, .team-member-designation-wrapper{
+    text-align: center;
+}
+.team-member-name-wrapper h3 , .team-member-message-wrapper p, .team-member-social-wrapper, .team-member-designation-wrapper h4{
+    margin: 5px;
+}
+
+/*----------------------------------Icon--------------------------*/
+.team-member-social-wrapper a{
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: transparent;
+}
+.team-member-social-wrapper i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    height: 1em;
+    width: 1em;
+    text-align: center;
+}
+.team-member-social-wrapper a:last-child {
+    margin-right: 0px !important;
+}
+
+
+
+.skin-1 .team-member-name-wrapper .team-member-name {
+    color : #272727;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+.skin-1 .team-member-designation{
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    margin: 5px 0 ;
+    text-transform: uppercase;
+}
+
+
+
+.team-member-wrapper.skin-1{
+    padding : 10px 5px;
+}
+
+.team-member-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+a{
+    text-decoration: none;
+}
+/*------------skin-2-----------------*/
+.skin-2 img{
+    width: 100%;
+    height: auto;
+}
+.skin-2 .team-member-designation-wrapper{
+    position: absolute;
+    top : 15px;
+    left: 15px;
+    display: inline-block;
+    padding: 5px;
+    background-color: #00ff1454;
+}
+
+
+/*-------------skin-3--------------*/
+.skin-3 img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    width: 100px;
+}
+.skin-3 .team-member-social-wrapper{
+    order : 2;
+}
+.skin-3 .team-member-social-wrapper i{
+    color: #e0003b;
+}
+
+.skin-3 .team-member-designation-wrapper{
+    position: relative;
+}
+
+.team-member-wrapper.skin-3{
+    padding : 10px 0;
+}
+
+/*--------------icon-offical-color---------------*/
+.official-facebook{
+    color : #3b5998 !important;
+}
+.official-twitter{
+    color : #1DA1F2 !important;
+}
+.official-skype{
+    color : #00AFF0 !important;
+}
+.official-instagram{
+    color : #e24329 !important;
+}
+.official-linkedin{
+    color : #0077b5 !important;
+}
+.official-google-plus-g{
+    color : #dd4b39 !important;
+}
+

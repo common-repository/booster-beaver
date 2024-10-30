@@ -1,0 +1,123 @@
+/**
+   After Before Image
+**/
+/* --------------------------------
+Primary style
+-------------------------------- */
+.bp-img-comp-container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.bp-img-comp-container img {
+    vertical-align: middle;
+}
+
+.bp-after-image {
+    /*position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;*/
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transform: translateZ(0px);
+    backface-visibility: hidden;
+}
+
+.bp-after-img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.bp-img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    opacity: 1.0;
+    border-radius: 50%;
+}
+
+.icon-horizontal {
+    cursor: ew-resize;
+    margin-top: -20px;
+}
+
+.icon-vertical {
+    cursor: n-resize;
+    margin-left: -20px;
+}
+
+.bp-img-comp-overlay {
+}
+
+.mode-horizontal .bp-after-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: auto;
+    height: 100% !important;
+    max-width: none !important;
+}
+
+.mode-vertical .bp-after-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: auto !important;
+    max-width: none !important;
+}
+
+.bp-slider-icon {
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    left: 50%;
+}
+
+.fl-module-bp-after-before-image {
+    text-align: center;
+}
+
+.fl-module-bp-after-before-image .fl-module-content {
+    display: inline-block;
+    margin: 0 auto !important;
+    overflow: hidden;
+}
+
+.bp-text {
+    position: absolute !important;
+    padding: 5px 10px;
+    transition: transform .3s .7s, opacity .3s .7s;
+    z-index: 0;
+    margin: 20px;
+}
+.bp-img-comp-slider i{
+    font-size: 32px;
+    height: 1em;
+    width: 1em;
+    display: block;
+    text-align: center;
+}
+.bp-img-comp-slider i.dashicons::before{
+    font-size : inherit;
+    height: 1em;
+    width: 1em;
+    display: block;
+    text-align: center;
+}
+/*.bp-img-comp-slider i,.bp-img-comp-slider i.dashicons::before{
+    height: unset;
+    width: unset;
+}*/

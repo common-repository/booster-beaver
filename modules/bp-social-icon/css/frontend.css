@@ -1,0 +1,78 @@
+ul{
+    margin : 0px;
+}
+
+.bp-social-icon-wrapper .bp-icon.stacked i ,.bp-social-icon-wrapper .bp-icon.framed i{
+    width: 1em;
+    height: 1em;
+}
+
+.bp-social-icon-wrapper i {
+    display: block;
+    text-align: center;
+    font-size: inherit;
+    position: relative;
+}
+.bp-social-icon-wrapper i:before{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.bp-social-icon-wrapper .bp-icon {
+    display: inline-block;
+}
+
+.bp-icon {
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.bp-social-icon-rounded .bp-icon {
+    -webkit-border-radius: 10%;
+    border-radius: 10%;
+}
+
+.bp-social-icon-circle .bp-icon {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.bp-icon:hover {
+    opacity: .9;
+}
+
+.bp-icon i.dashicons::before{
+    font-size: inherit;
+    height: inherit;
+    width: inherit;
+    display: block;
+    text-align: center;
+}
+.bp-social-icon-horizontal .bp-icon-block:last-child {
+    margin-right: 0px !important;
+}
+.bp-social-icon-vertical .bp-icon-block:last-child {
+    margin-bottom: 0px !important;
+}
+
+
+.bp-icon-block * {
+    transition: 0.1s all ease;
+}
+
+.bp-icons{
+    list-style: none;
+    padding: 0px;
+    display : flex;
+}
+.bp-social-icon-horizontal .bp-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bp-social-icon-vertical .bp-icons{
+    display: flex;
+    flex-direction: column;
+}

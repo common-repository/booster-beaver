@@ -1,0 +1,70 @@
+.img-pos-top .bp-imagebox{
+    display: flex;
+    flex-direction: column;
+}
+.img-pos-left .bp-imagebox{
+    display: flex;
+    flex-direction: row;
+}
+
+.img-pos-right .bp-imagebox{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.img-pos-top img , .img-pos-left img , .img-pos-right img{
+    height : auto;
+    max-width: 100%;
+}
+
+
+.bp-imagebox-wrapper.img-pos-right .bp-imagebox-content-wrapper , .bp-imagebox-wrapper.img-pos-left .bp-imagebox-content-wrapper{
+    flex-grow: 1;
+}
+
+.img-pos-left .bp-imagebox .bp-imagebox-content-wrapper{
+    text-align : left;
+}
+.img-pos-right .bp-imagebox .bp-imagebox-content-wrapper{
+    text-align : right;
+}
+.img-pos-top .bp-imagebox {
+    text-align : center;
+}
+
+.bp-imagebox-overlay{
+    position: absolute;
+    top : 0;
+    left: 0;
+    width: 100%;
+    background-color : rgba(0,44,244,0.24);
+    height: 100%;
+}
+
+.bp-imagebox{
+    overflow: hidden;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+/*Editor Mode end*/
+
+
+.action-button-wrapper a {
+    display: inline-flex;
+    line-height: 1em;
+    padding : 10px 20px;
+}
+
+.action-button-wrapper.action-button-full-width a {
+    display: block;
+}
+.action-button-wrapper .action-button-text{align-self : center;}
+
+.bp-imagebox a , .bp-imagebox a:hover{
+    text-decoration: none;
+}
+
+
+.bp-imagebox-content-wrapper , .bp-imagebox-image-wrapper{
+    z-index: 99;
+}

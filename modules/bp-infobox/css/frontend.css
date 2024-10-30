@@ -1,0 +1,105 @@
+.info-icon-inner{
+    transition: all .3s ease-in-out;
+}
+
+.bp-infobox .info-icon-inner i{
+    height: 1em;
+    width: 1em;
+    display: block;
+    text-align: center;
+    font-size: inherit;
+    position: relative;
+}
+.bp-infobox .info-icon-inner i:before {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.bp-infobox .info-icon-inner i.dashicons::before {
+    font-size: inherit;
+    height: inherit;
+    width: inherit;
+    display: block;
+    text-align: center;
+}
+.bp-infobox .info-icon-wrapper , .back_box-icon-wrapper{
+    display: inline-block;
+}
+ .bp-infobox .info-icon-stacked .info-icon-inner{
+    padding: 0.5em;
+}
+.bp-infobox .info-icon-framed .info-icon-inner{
+    padding: 0.5em;
+}
+
+.bp-infobox .info-icon-shape-circle .info-icon-inner {
+    border-radius: 50%;
+}
+
+
+.icon-pos-top .bp-infobox{
+    display: flex;
+    flex-direction: column;
+}
+.icon-pos-left .bp-infobox{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-pos-right .bp-infobox{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.bp-infobox-content-wrapper h3{
+    margin : 0px 0px 10px 0px;
+}
+
+.bp-infobox-wrapper.icon-pos-right .bp-infobox-content-wrapper , .bp-infobox-wrapper.icon-pos-left .bp-infobox-content-wrapper{
+    flex-grow: 1;
+    z-index: 1;
+}
+s
+.icon-pos-left .bp-infobox .bp-infobox-content-wrapper{
+    text-align : left;
+}
+.icon-pos-right .bp-infobox .bp-infobox-content-wrapper{
+    text-align : right;
+}
+.icon-pos-top .bp-infobox {
+    text-align : center;
+}
+.bp-infobox-overlay{
+    position: absolute;
+    top : 0;
+    left: 0;
+    width: 100%;
+    background-color : rgba(0,44,244,0.24);
+    height: 100%;
+}
+
+.bp-infobox{
+    overflow: hidden;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+
+/*Editor Mode end*/
+
+
+.action-button-wrapper a {
+    display: inline-flex;
+    line-height: 1em;
+    padding : 10px 20px;
+}
+
+.action-button-wrapper.action-button-full-width a {
+    display: block;
+}
+.action-button-wrapper .action-button-text{align-self: center;}
+
+.bp-infobox a , .bp-infobox a:hover{
+    text-decoration: none;
+}

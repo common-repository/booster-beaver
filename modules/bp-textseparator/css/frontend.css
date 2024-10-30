@@ -1,0 +1,85 @@
+.bp-ts-wrapper {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto;
+
+}
+
+.bp-ts-wrapper .bp-ts-title,.ts-icon-inner {
+    margin: 0 5px;
+}
+
+.ts-icon-inner i {
+    height: 1em;
+    width: 1em;
+    display: block;
+    text-align: center;
+    font-size: inherit;
+    position: relative;
+}
+.ts-icon-inner i:before{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.ts-icon-inner i.dashicons::before{
+    font-size: inherit;
+    height: inherit;
+    width: inherit;
+    display: block;
+    text-align: center;
+}
+
+.bp-ts-wrapper .bp-ts-sep-holder {
+    flex: 1 1 auto;
+    height: 1px;
+    min-width: 10%;
+    position: relative;
+}
+
+.bp-ts-wrapper .bp-ts-sep-holder .bp-ts-sep-lines {
+    border-top-width: 1px;
+    display: block;
+    height: 1px;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+
+.bp-ts-title {
+    -moz-box-flex: 0;
+    flex: 0 1 auto;
+    line-height: 1em;
+    overflow-wrap: break-word;
+}
+
+.bp-ts-title .bp-ts-heading-title {
+    margin: 0px;
+}
+
+.bp-ts-right .sep-right {
+    display: none;
+}
+
+.bp-ts-left .sep-left {
+    display: none;
+}
+
+.ts-icon-shape-circle .ts-icon-inner {
+    border-radius: 50%;
+}
+
+.bp-ts-wrapper .ts-icon-default .ts-icon-inner {
+    line-height: 1;
+}
+
+.bp-ts-wrapper .ts-icon-stacked .ts-icon-inner {
+    padding: 0.5em;
+}
+
+.bp-ts-wrapper .ts-icon-framed .ts-icon-inner {
+    padding: 0.5em;
+}
